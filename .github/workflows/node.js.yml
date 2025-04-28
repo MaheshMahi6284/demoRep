@@ -43,7 +43,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Run Angular Linter
+    - name: npm ci
       run: npm run lint
 
 
