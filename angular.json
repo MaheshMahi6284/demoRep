@@ -75,14 +75,13 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
-
-       "lint": {
+        "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "eslintConfig": "apps/my-angular-app/.eslintrc.json",
+            "eslintConfig": ".eslintrc.json",  // Ensure this path is correct
             "tsConfig": [
-              "apps/my-angular-app/tsconfig.app.json",
-              "apps/my-angular-app/tsconfig.spec.json"
+              "tsconfig.app.json",
+              "tsconfig.spec.json"
             ]
           }
         },
