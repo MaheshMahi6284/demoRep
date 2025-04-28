@@ -78,7 +78,7 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "eslintConfig": ".eslintrc.json",  // Ensure this path is correct
+            "eslintConfig": ".eslintrc.json",  
             "tsConfig": [
               "tsconfig.app.json",
               "tsconfig.spec.json"
