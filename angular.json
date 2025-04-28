@@ -75,6 +75,17 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
+       "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "eslintConfig": "apps/my-angular-app/.eslintrc.json",
+            "tsConfig": [
+              "apps/my-angular-app/tsconfig.app.json",
+              "apps/my-angular-app/tsconfig.spec.json"
+            ]
+          }
+        },
+        
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
